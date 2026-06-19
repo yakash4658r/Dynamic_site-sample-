@@ -8,48 +8,36 @@ export default {
     extend: {
       colors: {
         primary: {
-          50: '#eff6ff',
-          100: '#dbeafe',
-          200: '#bfdbfe',
-          300: '#93c5fd',
-          400: '#60a5fa',
-          500: '#3b82f6',
-          600: '#2563eb',
-          700: '#1d4ed8',
-          800: '#1e40af',
-          900: '#1e3a8a',
-          950: '#172554',
+          50: '#fdf8f6',
+          100: '#f2e8e5',
+          200: '#eaddd7',
+          300: '#e0cec7',
+          400: '#d2bab0',
+          500: '#d4af37', /* Classic Gold */
+          600: '#b5952f',
+          700: '#967b27',
+          800: '#78621f',
+          900: '#5a4917',
+          950: '#3c310f',
         },
-        secondary: {
-          50: '#f0fdfa',
-          100: '#ccfbf1',
-          200: '#99f6e4',
-          300: '#5eead4',
-          400: '#2dd4bf',
-          500: '#14b8a6',
-          600: '#0d9488',
-          700: '#0f766e',
-          800: '#115e59',
-          900: '#134e4a',
-          950: '#042f2e',
+        slate: {
+          850: '#141b2d',
+          900: '#0f172a',
+          950: '#020617', /* Deep Obsidian */
+          975: '#010409',
         },
         accent: {
-          50: '#faf5ff',
-          100: '#f3e8ff',
-          200: '#e9d5ff',
-          300: '#d8b4fe',
-          400: '#c084fc',
-          500: '#a855f7',
-          600: '#9333ea',
-          700: '#7e22ce',
-          800: '#6b21a8',
-          900: '#581c87',
-          950: '#3b0764',
-        },
+          500: '#f59e0b', /* Amber */
+        }
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
+        serif: ['Playfair Display', 'serif'],
       },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'glass': 'linear-gradient(to right bottom, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.01))',
+      }
     },
   },
   plugins: [],
