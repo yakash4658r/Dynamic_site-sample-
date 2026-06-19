@@ -43,7 +43,7 @@ const App = () => {
 
   return (
     <ToastProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/Dynamic_site-sample-/">
         <div className="flex flex-col min-h-screen">
           <Navbar user={user} role={role} onLogout={handleLogout} />
           
