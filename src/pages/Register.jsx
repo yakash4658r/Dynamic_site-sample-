@@ -40,18 +40,18 @@ export const Register = () => {
       subtitle="Join our community and start your professional journey."
     >
       <form onSubmit={handleSubmit} className="space-y-5">
-        <div className="flex p-1.5 bg-slate-900 border border-slate-800 rounded-xl mb-10 shadow-inner">
+        <div className="flex p-1.5 bg-slate-50 border border-slate-200 rounded-xl mb-10 shadow-sm">
           <button 
             type="button" 
             onClick={() => setRole('candidate')}
-            className={`flex-1 py-2.5 text-sm font-bold rounded-lg transition-all duration-300 ${role === 'candidate' ? 'bg-primary-500/20 text-primary-400 border border-primary-500/30 shadow-[0_0_15px_rgba(212,175,55,0.15)]' : 'text-slate-500 hover:text-slate-300'}`}
+            className={`flex-1 py-2.5 text-sm font-bold rounded-lg transition-all duration-300 ${role === 'candidate' ? 'bg-white text-primary-600 shadow-[0_2px_8px_rgba(0,0,0,0.05)]' : 'text-slate-500 hover:text-slate-700'}`}
           >
             Candidate
           </button>
           <button 
             type="button" 
             onClick={() => setRole('employer')}
-            className={`flex-1 py-2.5 text-sm font-bold rounded-lg transition-all duration-300 ${role === 'employer' ? 'bg-amber-500/20 text-amber-500 border border-amber-500/30 shadow-[0_0_15px_rgba(245,158,11,0.15)]' : 'text-slate-500 hover:text-slate-300'}`}
+            className={`flex-1 py-2.5 text-sm font-bold rounded-lg transition-all duration-300 ${role === 'employer' ? 'bg-white text-amber-500 shadow-[0_2px_8px_rgba(0,0,0,0.05)]' : 'text-slate-500 hover:text-slate-700'}`}
           >
             Employer
           </button>

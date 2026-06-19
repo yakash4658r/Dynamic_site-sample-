@@ -6,21 +6,21 @@
 
 @layer base {
   body {
-    @apply bg-slate-950 text-slate-100 font-sans antialiased selection:bg-primary-500/30 selection:text-primary-200;
+    @apply bg-slate-50 text-slate-900 font-sans antialiased selection:bg-primary-500/30 selection:text-primary-900;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply px-6 py-3 bg-gradient-to-r from-primary-600 to-primary-500 text-slate-950 font-bold rounded-xl shadow-[0_0_20px_rgba(212,175,55,0.3)] hover:shadow-[0_0_30px_rgba(212,175,55,0.5)] hover:-translate-y-0.5 transition-all duration-300 active:scale-95 disabled:opacity-50 border border-primary-400/50;
+    @apply px-6 py-3 bg-gradient-to-r from-primary-600 to-primary-500 text-white font-bold rounded-xl shadow-[0_4px_15px_rgba(45,117,191,0.3)] hover:shadow-[0_6px_25px_rgba(45,117,191,0.4)] hover:-translate-y-0.5 transition-all duration-300 active:scale-95 disabled:opacity-50 border border-primary-400/50;
   }
   .btn-secondary {
-    @apply px-6 py-3 bg-glass backdrop-blur-md text-slate-200 border border-slate-700/50 font-semibold rounded-xl shadow-sm hover:bg-slate-800/50 hover:border-primary-500/50 hover:text-primary-400 transition-all duration-300 active:scale-95;
+    @apply px-6 py-3 bg-white/80 backdrop-blur-md text-slate-700 border border-slate-200 font-semibold rounded-xl shadow-sm hover:bg-slate-50 hover:border-primary-300 hover:text-primary-600 transition-all duration-300 active:scale-95;
   }
   .card-premium {
-    @apply bg-slate-900/40 backdrop-blur-xl border border-slate-800/50 rounded-2xl shadow-2xl hover:shadow-[0_0_30px_rgba(212,175,55,0.05)] hover:-translate-y-1 hover:border-primary-500/30 transition-all duration-500 p-6;
+    @apply bg-white/90 backdrop-blur-xl border border-slate-100/80 rounded-2xl shadow-[0_8px_30px_rgba(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.08)] hover:-translate-y-1 hover:border-primary-200 transition-all duration-500 p-6;
   }
   .input-field {
-    @apply w-full px-4 py-3 rounded-xl border border-slate-800 bg-slate-900/50 text-white placeholder-slate-500 focus:ring-2 focus:ring-primary-500/50 focus:border-primary-500 outline-none transition-all duration-300;
+    @apply w-full px-4 py-3 rounded-xl border border-slate-200 bg-white/80 text-slate-900 placeholder-slate-400 focus:ring-2 focus:ring-primary-500/30 focus:border-primary-500 outline-none transition-all duration-300 shadow-sm;
   }
 }
